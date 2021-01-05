@@ -6,8 +6,8 @@ puts "----------"
 
 # Your code goes here ...
 
-@store1 = Store.select(id: 1)
+@store1 = Store.find(1)
 
-@store2 = Store.select(id: 2)
+@store2 = Store.where(id: 2).first
 
 Store.update(1, :name => 'Calgary')
